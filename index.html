@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    </script>
+</head>
+<body>
+    <section>
+        <div>
+            <ul class="change">
+                <li>first</li>
+                <li>second</li>
+                <li>third</li>
+                <li>fourth</li>
+                <li>fifth</li>
+            </ul>
+        </div>
+    </section>
+    <script type = "text/javascript" language = "javascript">
+        $(document).ready(function() {
+           /* Selects the first child.*/
+           $("li:nth-child(1)").attr("id", "first");
+           $("li:nth-child(2)").attr("id", "second");
+           $("li:nth-child(3)").attr("id", "third");
+           $("li:nth-child(4)").attr("id", "fourth");
+           $("li:nth-child(5)").attr("id", "fifth");
+
+           $('#first').append('<img id="shampoo-image" src="https://cdn.shopify.com/s/files/1/0686/0842/6294/files/shampoo.png?v=1669959372" width="40px" height="40px" />')
+           $('#second').append('<img id="accessories-image" src="https://cdn.shopify.com/s/files/1/0686/0842/6294/files/bags.png?v=1669959371"  width="40px" height="40px"/>')
+           $('#third').append('<img id="conditioner-image" src="https://cdn.shopify.com/s/files/1/0686/0842/6294/files/shampoo_1.png?v=1669959371"  width="40px" height="40px" />')
+           $('#fourth').append('<img id="oils-image" src="https://cdn.shopify.com/s/files/1/0686/0842/6294/files/olive-oil.png?v=1669959372" width="40px" height="40px" />')
+           $('#fifth').append('<img id="serum-image" src="https://cdn.shopify.com/s/files/1/0686/0842/6294/files/serum_1.png?v=1669959371" width="40px" height="40px" />')
+        });
+
+
+     </script>
+
+
+    <script>
+
+document.getElementsByClassName('change')[0].setAttribute('id', 'new-id-of-menu');
+
+//  let first = document.getElementById("change").setAttribute("id", "new-id");  
+//  let third = document.getElementById("new-id").setAttribute("class", "new-first-class");  
+// let second = first.firstChild;
+// second.setAttribute("id","shampoo");
+
+
+
+    </script>
+
+    <style>
+        #first img {
+            display: none;
+            transition: all 1s ease;
+        }
+
+        #first:hover img {
+            display: inline-block;
+            transition: all 1s ease;
+        }
+
+
+        #second img {
+            display: none;
+            transition: all 1s ease;
+        }
+
+        #second:hover img {
+            display: inline-block;
+            transition: all 1s ease;
+        }
+
+        #third img {
+            display: none;
+            transition: all 1s ease;
+        }
+
+        #third:hover img {
+            display: inline-block;
+            transition: all 1s ease;
+        }
+        #fourth img {
+            display: none;
+            transition: all 1s ease;
+        }
+
+        #fourth:hover img {
+            display: inline-block;
+            transition: all 1s ease;
+        } #fifth img {
+            display: none;
+            transition: all 1s ease;
+        }
+
+        #fifth:hover img {
+            display: inline-block;
+            transition: all 1s ease;
+        }
+    </style>
+</body>
+</html>
